@@ -1,0 +1,25 @@
+# Alles negeren, daarna alleen broncode toestaan.
+# Gecompileerde binaries hebben geen extensie en kunnen secrets bevatten.
+*
+!*/
+!.gitignore
+!README.md
+!*.c
+!*.h
+!file/username.csv
+
+# Kleine Node.js server die foto's van http-request.c ontvangt
+!http-server/node-server/server.js
+!http-server/node-server/package.json
+!http-server/node-server/package-lock.json
+http-server/node-server/node_modules/
+
+# Webcam-opnames en foto's (privé)
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.mjpeg
+
+# Secrets
+.env
